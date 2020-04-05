@@ -1,0 +1,36 @@
+.container {
+    text-align: center;
+    height: 100vh;
+    &__title {
+
+        &-message {
+            padding: 22vh 0;
+            animation-name: popup-title;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;  
+            animation-delay: 2s;
+            opacity: 0;
+
+        }
+    }
+    &__body {
+        &-message {
+            // padding: 22vh 0;
+            animation-name: popup-body;
+            animation-delay: 6s;
+            animation-duration: 4s;
+            opacity: 0;
+            animation-fill-mode: forwards;  
+        }
+    }
+}
+
+@keyframes popup-title {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes popup-body {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
